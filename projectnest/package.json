@@ -1,0 +1,13 @@
+{
+  "name": "projectnest",
+  "version": "1.0.0",
+  "description": "Project Management Application",
+  "main": "./src/App.ts",
+  "scripts": {
+    "build": "rimraf ./build && tsc" ,
+    "dev:start": "npm i rimraf && npm run build",
+    "start": "npm run build"
+  },
+  "author": "Irfan Ghat",
+  "license": "ISC"
+}

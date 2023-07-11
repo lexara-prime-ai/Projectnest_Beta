@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Users | Admin | Projectnest | Project Management</title>
+
+    <link rel="shortcut icon" href="../assets/icons/favicon.ico" type="image/x-icon">
+
+    <!-- IMPORTS  -->
+    <link rel="stylesheet" href="../assets/css/users.css">
+
+    <!-- SCRIPTS -->
+    <script src="../build/Users.js" defer></script>
+
+    <!-- IONICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../assets/images/logos/logo_icon.png" alt="projectnest" class="logo-icon">
+
+            <h3 class="logo-text">
+                Projectnest
+            </h3>
+        </div>
+
+        <div href="../views/users.html" class="current-page">
+            <ion-icon name="add-outline" class="plus-icon"></ion-icon>
+            <h3 class="current-page-text">
+                Delete user
+            </h3>
+        </div>
+        <a href="../index.html" class="return-to-dashboard">
+            <ion-icon name="chevron-back-circle" class="back"></ion-icon>
+            <p>
+                Return to dashboard
+            </p>
+        </a>
+    </header>
+
+    <!-- USER CONTAINER -->
+    <section class="user-container" data-users="users">
+
+        <div class="section-title">
+            <h2 class="title">
+                <span>
+                    Active
+                </span>
+                 Users
+            </h2>
+        </div>
+
+        <!-- USER CARD -->
+        <!-- <div class="user-card selected">
+            <div class="user">
+                <a href="#" class="user-icon">
+                    <ion-icon name="person-outline" class="user-icon"></ion-icon>
+                </a>
+    
+                <h2 class="user-name">
+                    John Mwaniki
+                </h2>
+            </div>
+
+            <div class="user-status">
+                <h3 class="status active">
+                    active
+                </h3>
+            </div>
+
+            <a href="#" class="trash-icon">
+                <ion-icon name="trash-outline" class="delete-icon"></ion-icon>
+            </a>
+        </div> -->
+    </section>
+
+
+</body>
+
+</html>
