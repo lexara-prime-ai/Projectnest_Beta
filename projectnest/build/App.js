@@ -11,7 +11,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 // DEBUGGING
 const log = console.log;
 // SHARED
-const BASE_URL = `http://localhost:8000`;
+const BASE_URL = `https://projectnest-dev-server.onrender.com`;
 class App {
     /////////////////////////// 
     // READ PROJECT FORM INPUT
