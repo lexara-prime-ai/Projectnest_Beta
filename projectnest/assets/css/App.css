@@ -38,13 +38,14 @@ body {
 }
 
 /* STYLING FOR SCROLLBAR */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
 	width: 0px;
-    opacity:.8;
-    background: transparent;
+	opacity: .8;
+	background: transparent;
 }
-::-webkit-scrollbar:hover{
-    opacity: 1;
+
+::-webkit-scrollbar:hover {
+	opacity: 1;
 }
 
 /* HEADER */
@@ -142,14 +143,16 @@ header {
 /*	--------------------
 *	SEARCH BAR ANIMATION
 *	--------------------
-*/	
+*/
 @keyframes hover {
 	0% {
 		transform: translateY(0px);
 	}
+
 	50% {
 		transform: translateY(-4px);
 	}
+
 	100% {
 		transform: translateY(0px);
 	}
@@ -185,23 +188,24 @@ header {
 *-------------------
 */
 .profile-card {
-    position: absolute;
-    top: 115%;
-    right: 5%; 
-    background: var(--white);
+	position: absolute;
+	top: 115%;
+	right: 5%;
+	background: var(--white);
 	border: 1px solid #e6e6e6;
 	border-top: 12px solid var(--projects);
-    border-radius: .5rem;
-    box-shadow: 0 2rem 2rem 0 rgba(0, 0, 0, .3);
-    width: 15rem;
-    transform: scale(0);
-    transform-origin: top right; /* TAKES IN TWO PARAMS e.g top left*/
+	border-radius: .5rem;
+	box-shadow: 0 2rem 2rem 0 rgba(0, 0, 0, .3);
+	width: 15rem;
+	transform: scale(0);
+	transform-origin: top right;
+	/* TAKES IN TWO PARAMS e.g top left*/
 	z-index: 1;
 	transition: .2s all ease;
 }
 
 .profile-card.active {
-    transform: scale(1);
+	transform: scale(1);
 }
 
 .profile-card-title {
@@ -276,7 +280,8 @@ header {
 	width: 20vw;
 	position: sticky;
 	top: auto;
-	z-index: 1; /* BRING ELEMENTS TO FRONT */
+	z-index: 1;
+	/* BRING ELEMENTS TO FRONT */
 }
 
 .nav-links {
@@ -317,24 +322,25 @@ header {
 *	-------------------
 */
 .add-project-form {
-    position: absolute;
-    top: 3%;
-    right: -180%; 
-    background: var(--white);
+	position: absolute;
+	top: 3%;
+	right: -180%;
+	background: var(--white);
 	border: 1px solid #e6e6e6;
 	border-top: 12px solid var(--projects);
-    border-radius: .5rem;
-    box-shadow: 0 2rem 2rem 0 rgba(0, 0, 0, .3);
-    width: 25rem;
-    padding: 2rem;
-    transform: scale(0);
-    transform-origin: bottom left; /* TAKES IN TWO PARAMS e.g top left*/
+	border-radius: .5rem;
+	box-shadow: 0 2rem 2rem 0 rgba(0, 0, 0, .3);
+	width: 25rem;
+	padding: 2rem;
+	transform: scale(0);
+	transform-origin: bottom left;
+	/* TAKES IN TWO PARAMS e.g top left*/
 	z-index: 1;
 	transition: .2s all ease;
 }
 
 .add-project-form.active {
-    transform: scale(1);
+	transform: scale(1);
 }
 
 .form-title {
@@ -354,26 +360,26 @@ header {
 }
 
 .add-project-form .input-box {
-    margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 .add-project-form .input-box span {
-    font-size: 1rem;
+	font-size: 1rem;
 	font-weight: 900;
-    color: var(--cyan);
+	color: var(--cyan);
 }
 
 .add-project-form .input-box input {
-    font-size: .9rem;
+	font-size: .9rem;
 	font-weight: 600;
-    color: var(--davys-gray);
+	color: var(--davys-gray);
 	border: none;
 	border-bottom: 1px solid var(--gray-alt);
-    padding: .5rem;
-    background: transparent;
-    width: 100%;
-    text-transform: none;
-    margin: .5rem 0;
+	padding: .5rem;
+	background: transparent;
+	width: 100%;
+	text-transform: none;
+	margin: .5rem 0;
 	transition: .4s all ease;
 }
 
@@ -387,17 +393,19 @@ header {
 	border-bottom: 1px solid var(--projects);
 }
 
-::-webkit-input-placeholder { /* Edge */
+::-webkit-input-placeholder {
+	/* Edge */
 	color: var(--light-gray);
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer */
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer */
 	color: var(--light-gray);
-  }
-  
-  ::placeholder {
+}
+
+::placeholder {
 	color: var(--light-gray);
-  }
+}
 
 /*	------------------------------
 *	STYLING FOR SELECT INPUTS
@@ -428,7 +436,7 @@ option {
 }
 
 .add-project-form .btn {
-    width: 100%;
+	width: 100%;
 	padding: .5rem;
 	font-size: 1.2rem;
 	font-weight: 900;
@@ -612,6 +620,7 @@ option {
 .user-overview {
 	border-bottom: 6px solid var(--users);
 }
+
 /***********************************/
 
 /* ----------------------------
@@ -620,7 +629,7 @@ option {
 */
 .project-wrapper {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	gap: 1rem;
 	padding: 0 2rem 0 2rem;
 }
@@ -639,14 +648,16 @@ option {
 	padding-bottom: 1rem;
 }
 
-.update, .delete {
+.update,
+.delete {
 	text-decoration: none;
 	border: none;
 	background: none;
 	cursor: pointer;
 }
 
-.update-icon, .delete-icon {
+.update-icon,
+.delete-icon {
 	font-size: 1.5rem;
 	color: var(--gray-alt);
 	transition: .4s all ease;
@@ -746,7 +757,8 @@ option {
 	gap: .5rem;
 }
 
-.start-date h3, .date {
+.start-date h3,
+.date {
 	color: var(--projects);
 }
 
@@ -773,12 +785,12 @@ option {
 		font-weight: 600;
 		font-size: .7rem;
 	}
-	
+
 	.date {
 		font-weight: 900;
 		font-size: .7rem;
 	}
-}	
+}
 
 @media (max-width:768px) {
 
@@ -824,15 +836,18 @@ option {
 
 @media (max-width:320px) {
 	.timeline {
-		flex-direction: column;
+		flex-direction: row;
 	}
 
 	#app-container {
 		width: 100%;
 	}
 
-	.overview-cards, .project-wrapper {
-		grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	.overview-cards,
+	.project-wrapper {
+		display: flex;
+		flex-direction: column;
+		padding: .6rem;
 	}
 
 	.tasks {
